@@ -7,7 +7,7 @@ var fields = ['commit.author.name', 'commit.author.date'];
 // var csv = require('csv-parse');
 // var transform = require('stream-transform');
 
-var token = "token 10d87f9a02e69db1cd1aaa0d3c87033c72c8c414";
+var token = "token" + process.env.GITHUB;
 
 var url = fs.readFileSync('pull_requests.csv').toString().split("\n");	
 
